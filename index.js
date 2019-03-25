@@ -1,5 +1,6 @@
-import { sphere } from "./sphere.js";
+import { sphere, grid } from "./mesh.js";
 import { createScene, engine } from "./scene.js";
+
 window.addEventListener('DOMContentLoaded', function(){
 
             // call the createScene function
