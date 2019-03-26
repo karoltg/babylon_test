@@ -1,4 +1,4 @@
-import { sphere, grid } from "./mesh.js";
+import { sphere, grid, button } from "./mesh.js";
 import { createScene, engine } from "./scene.js";
 
 window.addEventListener('DOMContentLoaded', function(){

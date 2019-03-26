@@ -1,4 +1,4 @@
-import { sphere, grid } from "./mesh.js";
+import { sphere, grid, button } from "./mesh.js";
 
 // get the canvas DOM element
 var canvas = document.getElementById('renderCanvas');
@@ -12,7 +12,7 @@ var scene = new BABYLON.Scene(engine);
 var createScene = function(){
     
     // create a FreeCamera, and set its position to (x:0, y:5, z:-10)
-    var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 5,-10), scene);
+    var camera = new BABYLON.FreeCamera('camera1', new BABYLON.Vector3(0, 10, 0), scene);
     
     // target the camera to scene origin
     camera.setTarget(BABYLON.Vector3.Zero());
@@ -26,6 +26,7 @@ var createScene = function(){
     // create a built-in "ground" shape;
     var ground = BABYLON.Mesh.CreateGround('ground1', 6, 6, 2, scene);
     ground.material = grid;
+
 
     // return the created scene
     return scene;
